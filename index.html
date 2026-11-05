@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MedSol International | Medical, Solar & Global Trade</title>
+
+  <meta name="description"
+        content="MedSol International provides medical solutions, solar energy systems, import and export services, and professional consultancy.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: #17202a;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    /* TOP BAR */
+
+    .topbar {
+      background: #0b243b;
+      color: #dce8f1;
+      font-size: 13px;
+      padding: 9px 0;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .topbar-right {
+      display: flex;
+      gap: 22px;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid #e8edf1;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .logo-mark {
+      width: 43px;
+      height: 43px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #0b7a75, #16a39b);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 17px;
+    }
+
+    .logo-text {
+      font-family: "Manrope", sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: #102b43;
+      line-height: 1;
+    }
+
+    .logo-text span {
+      display: block;
+      color: #15988f;
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-top: 5px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #34495e;
+      transition: .25s;
+    }
+
+    .nav-links a:hover {
+      color: #0b8f87;
+    }
+
+    .nav-btn {
+      background: #0b8f87;
+      color: #fff !important;
+      padding: 12px 20px;
+      border-radius: 6px;
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 27px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 690px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(7,31,50,.95) 0%, rgba(7,31,50,.82) 48%, rgba(7,31,50,.48) 100%),
+        url("https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 690px;
+      color: #fff;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: #65ddd5;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: #65ddd5;
+    }
+
+    h1 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(38px, 5vw, 67px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      color: #dbe7ee;
+      font-size: 17px;
+      margin-bottom: 34px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 49px;
+      padding: 0 23px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: .25s;
+    }
+
+    .btn-primary {
+      background: #0da39a;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #07877f;
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      border: 1px solid rgba(255,255,255,.5);
+      color: #fff;
+    }
+
+    .btn-light:hover {
+      background: #fff;
+      color: #123047;
+    }
+
+    /* TRUST */
+
+    .trust {
+      background: #f6f9fa;
+      border-bottom: 1px solid #e9eef0;
+    }
+
+    .trust-inner {
+      min-height: 100px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      align-items: center;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .trust-icon {
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      background: #e1f4f2;
+      color: #087f78;
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: 13px;
+      color: #18334a;
+    }
+
+    .trust-item span {
+      font-size: 11px;
+      color: #758594;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-head {
+      max-width: 650px;
+      margin-bottom: 55px;
+    }
+
+    .section-label {
+      color: #0a9188;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(30px, 4vw, 43px);
+      line-height: 1.15;
+      color: #102b43;
+      letter-spacing: -1px;
+      margin-bottom: 17px;
+    }
+
+    .section-head p {
+      color: #6a7b89;
+      font-size: 15px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: #fff;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 470px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .experience {
+      position: absolute;
+      right: -25px;
+      bottom: 28px;
+      width: 190px;
+      padding: 22px;
+      background: #0b8f87;
+      color: white;
+      border-radius: 6px;
+      box-shadow: 0 15px 35px rgba(0,0,0,.18);
+    }
+
+    .experience strong {
+      display: block;
+      font-size: 33px;
+      line-height: 1;
+      font-family: "Manrope";
+    }
+
+    .experience span {
+      font-size: 12px;
+      opacity: .9;
+    }
+
+    .about-copy p {
+      color: #687986;
+      margin-bottom: 18px;
+      font-size: 15px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 25px;
+    }
+
+    .check-list li {
+      margin: 12px 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: #263f53;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      display: inline-grid;
+      place-items: center;
+      width: 22px;
+      height: 22px;
+      background: #e3f5f3;
+      color: #087f78;
+      border-radius: 50%;
+      margin-right: 10px;
+      font-size: 12px;
+    }
+
+    /* SERVICES */
+
+    .services {
+      background: #f5f8f9;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 34px 27px;
+      border: 1px solid #e8edef;
+      min-height: 300px;
+      transition: .3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      border-color: #a9ddd9;
+      box-shadow: 0 18px 45px rgba(16,43,67,.09);
+    }
+
+    .service-number {
+      font-size: 12px;
+      font-weight: 800;
+      color: #a5b4be;
+      margin-bottom: 27px;
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: #e4f5f3;
+      color: #0b8f87;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      font-size: 23px;
+      margin-bottom: 22px;
+    }
+
+    .service-card h3 {
+      font-family: "Manrope";
+      color: #14334b;
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: #71818d;
+      font-size: 13px;
+    }
+
+    /* PRODUCTS */
+
+    .products {
+      background: #fff;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .product-card {
+      border: 1px solid #e5ebee;
+      border-radius: 7px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .product-image {
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .4s;
+    }
+
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .product-info {
+      padding: 22px;
+    }
+
+    .product-info small {
+      color: #0b8f87;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 10px;
+    }
+
+    .product-info h3 {
+      font-family: "Manrope";
+      margin: 7px 0;
+      color: #17354d;
+      font-size: 18px;
+    }
+
+    .product-info p {
+      color: #71818d;
+      font-size: 13px;
+    }
+
+    /* WHY US */
+
+    .why {
+      background: #0c293f;
+      color: #fff;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .why h2 {
+      color: #fff;
+    }
+
+    .why-copy {
+      color: #bdccd5;
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 17px;
+    }
+
+    .feature {
+      padding: 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.035);
+    }
+
+    .feature strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .feature span {
+      color: #9eb0bc;
+      font-size: 12px;
+    }
+
+    /* PROCESS */
+
+    .process {
+      background: #f5f8f9;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .process-step {
+      position: relative;
+      background: #fff;
+      padding: 30px 25px;
+      border: 1px solid #e6edef;
+    }
+
+    .step-no {
+      font-family: "Manrope";
+      font-size: 38px;
+      color: #d9e8e9;
+      font-weight: 800;
+    }
+
+    .process-step h3 {
+      color: #18374e;
+      font-size: 16px;
+      margin: 8px 0;
+    }
+
+    .process-step p {
+      color: #72818d;
+      font-size: 13px;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 80px 0;
+      background:
+        linear-gradient(90deg, #087d76, #0c9d94);
+      color: white;
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .cta h2 {
+      color: white;
+      margin-bottom: 8px;
+    }
+
+    .cta p {
+      color: #d9f2f0;
+      font-size: 14px;
+    }
+
+    .cta .btn {
+      background: white;
+      color: #087d76;
+      white-space: nowrap;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #fff;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 60px;
+    }
+
+    .contact-info h3 {
+      font-family: "Manrope";
+      color: #14334b;
+      font-size: 21px;
+      margin-bottom: 18px;
+    }
+
+    .contact-info > p {
+      color: #71818d;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 21px;
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      background: #e4f5f3;
+      color: #0b8f87;
+      display: grid;
+      place-items: center;
+      border-radius: 5px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: #18374e;
+      font-size: 13px;
+    }
+
+    .contact-item span {
+      color: #71818d;
+      font-size: 13px;
+    }
+
+    .form {
+      background: #f5f8f9;
+      padding: 32px;
+      border: 1px solid #e6edef;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      font-size: 11px;
+      font-weight: 800;
+      color: #405565;
+      margin-bottom: 7px;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      border: 1px solid #dce5e9;
+      background: white;
+      padding: 13px 14px;
+      outline: none;
+      font-family: inherit;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #0b9a91;
+    }
+
+    textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .form .btn {
+      border: 0;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 3px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #071c2c;
+      color: #aebdc7;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr .7fr 1fr;
+      gap: 45px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .footer-brand p {
+      font-size: 13px;
+      line-height: 1.8;
+      max-width: 320px;
+      margin-top: 17px;
+    }
+
+    footer h4 {
+      color: white;
+      font-size: 13px;
+      margin-bottom: 17px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin: 9px 0;
+      font-size: 12px;
+    }
+
+    .footer-links a:hover {
+      color: #5ed5ce;
+    }
+
+    .copyright {
+      padding-top: 23px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 11px;
+    }
+
+    /* WHATSAPP */
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 26px;
+      z-index: 999;
+      box-shadow: 0 8px 25px rgba(0,0,0,.2);
+      transition: .25s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+      .nav-links {
+        gap: 16px;
+      }
+
+      .service-grid,
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .trust-inner {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 0;
+      }
+
+      .about-grid,
+      .why-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        gap: 40px;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .topbar {
+        display: none;
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 18px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid #e5eaed;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 5px 0;
+      }
+
+      .hero {
+        min-height: 600px;
+      }
+
+      .hero-content {
+        padding: 60px 0;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .service-grid,
+      .process-grid,
+      .product-grid,
+      .trust-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image img {
+        height: 350px;
+      }
+
+      .experience {
+        right: 15px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .copyright {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div>International Business & Technical Solutions</div>
+
+    <div class="topbar-right">
+      <span>✉ info@medsolinternational.com</span>
+      <span>☎ +880 1XXX-XXXXXX</span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+
+    <a href="#home" class="logo">
+      <div class="logo-mark">MS</div>
+
+      <div class="logo-text">
+        MedSol International
+        <span>BUSINESS • SOLUTIONS • TRADE</span>
+      </div>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="nav-btn" href="#contact">Request a Quote</a></li>
+    </ul>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        Integrated Business Solutions
+      </div>
+
+      <h1>
+        Reliable Solutions for
+        Healthcare, Energy & Global Trade
+      </h1>
+
+      <p>
+        We connect quality products, technical expertise and international
+        sourcing to support hospitals, businesses and development projects
+        with dependable solutions.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-primary">
+          Explore Our Services
+        </a>
+
+        <a href="#contact" class="btn btn-light">
+          Contact Our Team
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="container trust-inner">
+
+    <div class="trust-item">
+      <div class="trust-icon">✓</div>
+      <div>
+        <strong>Quality Focused</strong>
+        <span>Products selected for performance</span>
+      </div>
+    </div>
+
+    <div class="trust-item">
+      <div class="trust-icon">◎</div>
+      <div>
+        <strong>Global Sourcing</strong>
+        <span>International supplier network</span>
+      </div>
+    </div>
+
+    <div class="trust-item">
+      <div class="trust-icon">⚙</div>
+      <div>
+        <strong>Technical Support</strong>
+        <span>Practical project assistance</span>
+      </div>
+    </div>
+
+    <div class="trust-item">
+      <div class="trust-icon">↗</div>
+      <div>
+        <strong>Business Ready</strong>
+        <span>Built around client requirements</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container about-grid">
+
+    <div class="about-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=85"
+        alt="Medical facility">
+
+      <div class="experience">
+        <strong>360°</strong>
+        <span>Business & Technical Support</span>
+      </div>
+
+    </div>
+
+    <div class="about-copy">
+
+      <div class="section-label">Who We Are</div>
+
+      <h2>
+        One Business Platform.
+        Multiple Industry Solutions.
+      </h2>
+
+      <p>
+        MedSol International operates across healthcare, renewable energy,
+        international trade and business consultancy. Our work is built around
+        practical requirements rather than one-size-fits-all solutions.
+      </p>
+
+      <p>
+        From sourcing medical equipment and solar components to coordinating
+        international procurement and advisory services, we help clients move
+        from requirement to delivery with clarity and accountability.
+      </p>
+
+      <ul class="check-list">
+        <li>Medical equipment & healthcare solutions</li>
+        <li>Solar power systems and components</li>
+        <li>Import, export & international sourcing</li>
+        <li>Commercial and technical consultancy</li>
+      </ul>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="section-head">
+      <div class="section-label">Our Services</div>
+
+      <h2>
+        Solutions Designed Around Your Requirements
+      </h2>
+
+      <p>
+        We provide focused services across four key business areas, supported
+        by sourcing, technical coordination and commercial expertise.
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="service-number">01 / HEALTHCARE</div>
+
+        <div class="service-icon">✚</div>
+
+        <h3>Medical Solutions</h3>
+
+        <p>
+          Supply and sourcing support for medical equipment, hospital
+          requirements, diagnostic products and healthcare facilities.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">02 / ENERGY</div>
+
+        <div class="service-icon">☀</div>
+
+        <h3>Solar Energy</h3>
+
+        <p>
+          Solar panels, inverters, batteries and complete system solutions
+          for commercial, institutional and project-based applications.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">03 / TRADE</div>
+
+        <div class="service-icon">⇄</div>
+
+        <h3>Import & Export</h3>
+
+        <p>
+          International procurement and trade coordination with attention to
+          supplier selection, documentation and delivery requirements.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">04 / ADVISORY</div>
+
+        <div class="service-icon">◇</div>
+
+        <h3>Consultancy</h3>
+
+        <p>
+          Commercial and technical guidance for organizations planning
+          procurement, energy projects or new business initiatives.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+
+  <div class="container">
+
+    <div class="section-head">
+      <div class="section-label">Product Categories</div>
+
+      <h2>
+        Selected Products & Solutions
+      </h2>
+
+      <p>
+        A representative selection of the product categories we source and
+        supply according to project requirements.
+      </p>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=1000&q=85"
+            alt="Medical equipment">
+        </div>
+
+        <div class="product-info">
+          <small>Healthcare</small>
+          <h3>Medical Equipment</h3>
+          <p>
+            Hospital and clinical equipment sourced according to required
+            specifications and application.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=85"
+            alt="Solar panels">
+        </div>
+
+        <div class="product-info">
+          <small>Renewable Energy</small>
+          <h3>Solar Systems</h3>
+          <p>
+            Solar panels, inverters, batteries and related components for
+            residential and commercial applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1000&q=85"
+            alt="International logistics">
+        </div>
+
+        <div class="product-info">
+          <small>International Trade</small>
+          <h3>Industrial & General Goods</h3>
+          <p>
+            Procurement and international sourcing for approved commercial
+            and project requirements.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why">
+
+  <div class="container why-grid">
+
+    <div>
+      <div class="section-label">Why Choose Us</div>
+
+      <h2>
+        Practical Business Support From Source to Delivery
+      </h2>
+
+      <p class="why-copy">
+        We focus on clear communication, suitable sourcing and dependable
+        execution. Every assignment begins with understanding the client's
+        actual requirement.
+      </p>
+
+      <a href="#contact" class="btn btn-primary">
+        Discuss Your Requirement
+      </a>
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+        <strong>Requirement Based Sourcing</strong>
+        <span>Products and suppliers are evaluated around project needs.</span>
+      </div>
+
+      <div class="feature">
+        <strong>International Network</strong>
+        <span>Access to suppliers and trade partners across markets.</span>
+      </div>
+
+      <div class="feature">
+        <strong>Commercial Clarity</strong>
+        <span>Clear communication throughout procurement and coordination.</span>
+      </div>
+
+      <div class="feature">
+        <strong>Long-Term Support</strong>
+        <span>We remain available beyond the initial transaction.</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+
+  <div class="container">
+
+    <div class="section-head">
+      <div class="section-label">How We Work</div>
+
+      <h2>
+        A Clear Process From Requirement to Result
+      </h2>
+
+      <p>
+        Our workflow keeps communication straightforward and gives every
+        project a defined path forward.
+      </p>
+    </div>
+
+    <div class="process-grid">
+
+      <div class="process-step">
+        <div class="step-no">01</div>
+        <h3>Requirement</h3>
+        <p>
+          We review your product, service or project requirements.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-no">02</div>
+        <h3>Sourcing</h3>
+        <p>
+          Suitable suppliers, products and technical options are identified.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-no">03</div>
+        <h3>Coordination</h3>
+        <p>
+          Commercial details, documentation and delivery arrangements are
+          coordinated.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-no">04</div>
+        <h3>Delivery</h3>
+        <p>
+          The agreed solution moves forward with ongoing communication and
+          support.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+  <div class="container cta-inner">
+
+    <div>
+      <h2>Have a Product or Project Requirement?</h2>
+
+      <p>
+        Share your requirement with our team and let us review the right
+        sourcing or service option.
+      </p>
+    </div>
+
+    <a href="#contact" class="btn">
+      Send an Enquiry →
+    </a>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+  <div class="container contact-grid">
+
+    <div class="contact-info">
+
+      <div class="section-label">Contact</div>
+
+      <h2>
+        Let's Discuss Your Requirement
+      </h2>
+
+      <p>
+        For medical supplies, solar projects, international sourcing or
+        consultancy, send us your requirement. Our team will get back to you
+        with the relevant information.
+      </p>
+
+      <div class="contact-item">
+        <div class="contact-icon">☎</div>
+
+        <div>
+          <strong>Phone</strong>
+          <span>+880 1XXX-XXXXXX</span>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">✉</div>
+
+        <div>
+          <strong>Email</strong>
+          <span>info@medsolinternational.com</span>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">⌖</div>
+
+        <div>
+          <strong>Office</strong>
+          <span>Dhaka, Bangladesh</span>
+        </div>
+      </div>
+
+    </div>
+
+    <form class="form" onsubmit="sendForm(event)">
+
+      <div class="form-row">
+
+        <div class="field">
+          <label>Full Name</label>
+          <input type="text" required placeholder="Your name">
+        </div>
+
+        <div class="field">
+          <label>Company</label>
+          <input type="text" placeholder="Company name">
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <div class="field">
+          <label>Email</label>
+          <input type="email" required placeholder="you@example.com">
+        </div>
+
+        <div class="field">
+          <label>Phone</label>
+          <input type="tel" placeholder="+880">
+        </div>
+
+      </div>
+
+      <div class="field">
+        <label>Service Required</label>
+
+        <select>
+          <option>Medical Solutions</option>
+          <option>Solar Energy</option>
+          <option>Import & Export</option>
+          <option>Consultancy</option>
+          <option>Other Requirement</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Message</label>
+
+        <textarea
+          required
+          placeholder="Tell us briefly about your requirement..."></textarea>
+      </div>
+
+      <button class="btn btn-primary" type="submit">
+        Submit Enquiry
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <div class="logo">
+          <div class="logo-mark">MS</div>
+
+          <div class="logo-text" style="color:white;">
+            MedSol International
+            <span>BUSINESS • SOLUTIONS • TRADE</span>
+          </div>
+        </div>
+
+        <p>
+          Integrated business solutions covering healthcare, renewable energy,
+          international trade and consultancy services.
+        </p>
+
+      </div>
+
+      <div>
+        <h4>Company</h4>
+
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+
+        <ul class="footer-links">
+          <li><a href="#services">Medical</a></li>
+          <li><a href="#services">Solar</a></li>
+          <li><a href="#services">Import & Export</a></li>
+          <li><a href="#services">Consultancy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+
+        <ul class="footer-links">
+          <li>Dhaka, Bangladesh</li>
+          <li>+880 1XXX-XXXXXX</li>
+          <li>info@medsolinternational.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+
+      <span>
+        © <span id="year"></span> MedSol International. All rights reserved.
+      </span>
+
+      <span>
+        Medical • Solar • Trade • Consultancy
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- WHATSAPP -->
+<a
+  class="whatsapp"
+  href="https://wa.me/8801XXXXXXXXX"
+  target="_blank"
+  aria-label="Chat on WhatsApp">
+  ☎
+</a>
+
+<script>
+
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+
+  document.querySelectorAll(".nav-links a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      document.getElementById("navLinks").classList.remove("active");
+    });
+  });
+
+  function sendForm(event) {
+    event.preventDefault();
+
+    alert(
+      "Thank you for your enquiry. Our team will review your message and contact you shortly."
+    );
+
+    event.target.reset();
+  }
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+</script>
+
+</body>
+                                                </html>
